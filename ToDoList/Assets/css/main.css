@@ -1,5 +1,6 @@
 body{
-	background-color:#008F95;
+	background-color:#FFF;
+	font-family: 'Lora', serif;
 }
 
 hr{
@@ -107,7 +108,7 @@ hr{
 
 
 nav.navbar{
-	background-color: #E24E42 !important;
+	background-color: #EB6E80 !important;
 }
 
 nav ul{
@@ -170,4 +171,31 @@ footer a, footer p{
 
 footer a:hover{
 	color: #008F95;
+}
+
+p {
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+}
+
+#list1 {
+    background-color: #EB6E80;
+}
+#listTitle{
+    background-color:#FFF ;
+
+}
+#items {
+    background-color:#EB6E80 ;
 }
