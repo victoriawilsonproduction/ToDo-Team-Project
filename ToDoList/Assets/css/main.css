@@ -13,7 +13,7 @@ hr{
 	height:auto;
 }
 
-#newlist{ 
+.listButton{ 
 	background-color: #EB6E80;
 	border-radius: 50%;
 
@@ -24,7 +24,7 @@ hr{
 	cursor:pointer;
 }
 
-#newlist:hover{
+.listButton:hover{
 	background-color: #E9B000;
 	border-radius: 50%;
 }

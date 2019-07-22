@@ -8,3 +8,6 @@ function addLi(){
 	listNode.appendChild(liNode);
 }
 
+function checkItem(){
+	
+}
