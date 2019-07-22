@@ -38,4 +38,29 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+
+
+
+
+//Below was added from previous file 
+
+function addLi(){
+	var txtVal = document.getElementById('txtVal').value,
+		listNode = document.getElementById('list'),
+		liNode = document.createElement('LI'),
+		txtNode = document.createTextNode(txtVal);
+
+	liNode.appendChild(txtNode);
+	listNode.appendChild(liNode);
+}
+
+function checkItem(){
+	
+}
+
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
 module.exports = app;
