@@ -18,6 +18,11 @@ hr{
 
 }
 
+#list{
+	color:white;
+	cursor:pointer;
+}
+
 #newlist:hover{
 	background-color: #E9B000;
 	border-radius: 50%;
@@ -82,9 +87,24 @@ h1{
 	padding-top:10px;
 }
 
+ul.check-square{
+	list-style-type: none;
+}
+
+ul.check-square > li::before{ 
+	content: '\f14a' !important;   
+    font-family: FontAwesome;
+    margin-right: 10px;
+    margin-left: -20px;
+}
+
 hr{
 	color:#C0B283;
 }
+
+
+
+
 
 nav.navbar{
 	background-color: #E24E42 !important;

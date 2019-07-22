@@ -7,3 +7,4 @@ function addLi(){
 	liNode.appendChild(txtNode);
 	listNode.appendChild(liNode);
 }
+
