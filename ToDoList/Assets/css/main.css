@@ -8,9 +8,9 @@ hr{
 }
 
 .mylogo{
-	width: 100px;
+	width: auto;
 	vertical-align: middle;
-	/*height:auto;*/
+	height:auto;
 }
 
 #newlist{ 
