@@ -1,5 +1,6 @@
 body{
-	background-color:#008F95;
+	background-color:#FFF;
+	font-family: 'Lora', serif;
 }
 
 hr{
@@ -7,9 +8,9 @@ hr{
 }
 
 .mylogo{
-	width: auto;
+	width: 100px;
 	vertical-align: middle;
-	height:auto;
+	/*height:auto;*/
 }
 
 #newlist{ 
@@ -150,4 +151,31 @@ footer a, footer p{
 
 footer a:hover{
 	color: #008F95;
+}
+
+p {
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+}
+
+#list1 {
+    background-color: #EB6E80;
+}
+#listTitle{
+    background-color:#FFF ;
+
+}
+#items {
+    background-color:#EB6E80 ;
 }
