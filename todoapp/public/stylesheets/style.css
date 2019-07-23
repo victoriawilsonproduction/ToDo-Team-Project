@@ -30,17 +30,18 @@ hr{
 }
 
 #list1{
-	background-color: white;
+	background-color: #008F95;
 	width:50%;
 	margin:auto;
+
 }
 #listTitle{
-	background-color: black;
-}
-#items{
-	background-color: purple;
-}
+    background-color:#FFF ;
 
+}
+#items {
+    background-color:#008F95 ;
+}
 #headlogo{
 	height:50px;
 }
@@ -189,13 +190,3 @@ h3 {
     font-family: 'Lora', serif;
 }
 
-#list1 {
-    background-color: #EB6E80;
-}
-#listTitle{
-    background-color:#FFF ;
-
-}
-#items {
-    background-color:#EB6E80 ;
-}
