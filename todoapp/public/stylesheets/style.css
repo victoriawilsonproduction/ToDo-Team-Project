@@ -39,7 +39,7 @@ button {
   font-size: 15px;
   width: 60px;
   margin: 10px 0 0;
-  font-family: Lato, sans-serif;
+  font-family: 'Lora', serif;
   cursor: pointer;
 }
 button:hover {
@@ -65,7 +65,7 @@ input[type="text"] {
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
-  font-family: Lato, sans-serif;
+  font-family: 'Lora', serif;
   color: #888;
 }
 input[type="text"]:focus {
@@ -127,8 +127,6 @@ ul li.editMode input[type=text] {
 ul li.editMode label {
   display:none;
 }
-
-
 
 
 nav.navbar{
@@ -210,19 +208,21 @@ h2 {
 }
 
 h3 {
-    font-family: 'Lora', serif;
+    font-family: 'Libre Baskerville', serif;
 }
+
+
 
 <<<<<<< HEAD
 #list1 {
     background-color: #EB6E80;
 }
 #listTitle{
-    background-color:#FFF ;
+    background-color:#FFF;
 
 }
 #items {
-    background-color:#EB6E80 ;
+    background-color:#EB6E80;
 }
 
 }
