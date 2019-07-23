@@ -27,6 +27,8 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
+app.engine('ejs', require('ejs-locals'));
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
@@ -36,26 +38,8 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
-});
+}); 
 
 
-
-
-
-//Below was added from previous file 
-
-function addLi(){
-	var txtVal = document.getElementById('txtVal').value,
-		listNode = document.getElementById('list'),
-		liNode = document.createElement('LI'),
-		txtNode = document.createTextNode(txtVal);
-
-	liNode.appendChild(txtNode);
-	listNode.appendChild(liNode);
-}
-
-function checkItem(){
-	
-}
 
 module.exports = app;
