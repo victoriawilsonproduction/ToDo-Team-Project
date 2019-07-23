@@ -213,6 +213,7 @@ h3 {
     font-family: 'Lora', serif;
 }
 
+<<<<<<< HEAD
 #list1 {
     background-color: #EB6E80;
 }
@@ -223,3 +224,8 @@ h3 {
 #items {
     background-color:#EB6E80 ;
 }*/
+=======
+.placeholder {
+	font-famly: 'Lora', serif;
+}
+>>>>>>> efe6b29cd63b58ed094aa7d8f776c05541a2e88b
