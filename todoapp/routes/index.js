@@ -1,4 +1,7 @@
 var express = require('express');
+var layout = require('express-layout');
+var app = express();
+
 var router = express.Router();
 
 /*home screen*/
