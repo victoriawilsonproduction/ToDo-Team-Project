@@ -132,7 +132,7 @@ ul li.editMode label {
 
 
 nav.navbar{
-	background-color: #EB6E80 !important;
+	background-color: #E9B000 !important;
 }
 
 nav ul{
@@ -162,7 +162,7 @@ nav ul{
 }
 
 footer{
-	background-color:#EB6E80;
+	background-color:#E9B000;
 	position:absolute;
 	width:100%;
 	height:auto;
@@ -197,7 +197,7 @@ footer a:hover{
 	color: #008F95;
 }
 
-/*p {
+p {
     font-family: 'Lora', serif;
 }
 
@@ -223,9 +223,7 @@ h3 {
 }
 #items {
     background-color:#EB6E80 ;
-}*/
-=======
-.placeholder {
-	font-famly: 'Lora', serif;
+}
+
 }
 >>>>>>> efe6b29cd63b58ed094aa7d8f776c05541a2e88b
