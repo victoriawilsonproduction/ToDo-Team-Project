@@ -9,7 +9,7 @@ body{
 
 .mylogo{
 	width: auto;
-	vertical-align: middle;
+	vertical-align: center;
 	height:auto;
 }
 
@@ -39,8 +39,10 @@ button {
   font-size: 15px;
   width: 60px;
   margin: 10px 0 0;
-  font-family: Lato, sans-serif;
+  font-family: 'Lora', serif;
   cursor: pointer;
+  float: right;
+  display: in-line block;
 }
 button:hover {
   color: #333;
@@ -65,7 +67,7 @@ input[type="text"] {
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
-  font-family: Lato, sans-serif;
+  font-family: 'Lora', serif;
   color: #888;
 }
 input[type="text"]:focus {
@@ -129,8 +131,6 @@ ul li.editMode label {
 }
 
 
-
-
 nav.navbar{
 	background-color: #E9B000 !important;
 }
@@ -190,7 +190,7 @@ footer img{
 
 footer a, footer p{
 	color:#fff;
-	vertical-align:middle;
+	vertical-align: center;
 }
 
 footer a:hover{
@@ -210,20 +210,22 @@ h2 {
 }
 
 h3 {
-    font-family: 'Lora', serif;
+    font-family: 'Libre Baskerville', serif;
 }
 
-<<<<<<< HEAD
+
+
+/*<<<<<<< HEAD*/
 #list1 {
     background-color: #EB6E80;
 }
 #listTitle{
-    background-color:#FFF ;
+    background-color:#FFF;
 
 }
 #items {
-    background-color:#EB6E80 ;
+    background-color:#EB6E80;
 }
 
 }
->>>>>>> efe6b29cd63b58ed094aa7d8f776c05541a2e88b
+/*>>>>>>> efe6b29cd63b58ed094aa7d8f776c05541a2e88b*/
