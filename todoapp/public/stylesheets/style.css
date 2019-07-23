@@ -9,7 +9,7 @@ body{
 
 .mylogo{
 	width: auto;
-	vertical-align: middle;
+	vertical-align: center;
 	height:auto;
 }
 
@@ -41,6 +41,8 @@ button {
   margin: 10px 0 0;
   font-family: 'Lora', serif;
   cursor: pointer;
+  float: right;
+  display: in-line block;
 }
 button:hover {
   color: #333;
@@ -130,7 +132,7 @@ ul li.editMode label {
 
 
 nav.navbar{
-	background-color: #E9B000 !important;
+	background-color: #EB6E80 !important;
 }
 
 nav ul{
@@ -160,7 +162,7 @@ nav ul{
 }
 
 footer{
-	background-color:#E9B000;
+	background-color:#EB6E80;
 	position:absolute;
 	width:100%;
 	height:auto;
@@ -188,7 +190,7 @@ footer img{
 
 footer a, footer p{
 	color:#fff;
-	vertical-align:middle;
+	vertical-align: center;
 }
 
 footer a:hover{
@@ -213,17 +215,17 @@ h3 {
 
 
 
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 #list1 {
-    background-color: #EB6E80;
+    background-color: #E9B000;
 }
 #listTitle{
     background-color:#FFF;
 
 }
 #items {
-    background-color:#EB6E80;
+    background-color:#E9B000;
 }
 
 }
->>>>>>> efe6b29cd63b58ed094aa7d8f776c05541a2e88b
+/*>>>>>>> efe6b29cd63b58ed094aa7d8f776c05541a2e88b*/

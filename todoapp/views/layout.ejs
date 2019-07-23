@@ -3,13 +3,14 @@
 <head>
   <title><%= blocks.title %></title>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville%7CLora&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/792aec6a64.js"></script>
   
 </head>
 <body>
+    <div><%- partial('partials/navbar') -%></div>
     <%- body -%>
 
     <div class="container">
@@ -29,9 +30,9 @@
         <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
       </ul>
     </div>
+    <div><%-partial('partials/footer') %></div>
 
-  <link rel="stylesheet" type="text/css" href="style.css">
-
+  <script src="https://kit.fontawesome.com/792aec6a64.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script type="text/javascript" src= "Assets/js/app.js"></script>
 </body>
