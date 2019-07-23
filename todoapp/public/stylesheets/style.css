@@ -9,7 +9,7 @@ body{
 
 .mylogo{
 	width: auto;
-	vertical-align: middle;
+	vertical-align: center;
 	height:auto;
 }
 
@@ -41,6 +41,8 @@ button {
   margin: 10px 0 0;
   font-family: 'Lora', serif;
   cursor: pointer;
+  float: right;
+  display: in-line block;
 }
 button:hover {
   color: #333;
@@ -188,7 +190,7 @@ footer img{
 
 footer a, footer p{
 	color:#fff;
-	vertical-align:middle;
+	vertical-align: center;
 }
 
 footer a:hover{
@@ -213,7 +215,7 @@ h3 {
 
 
 
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 #list1 {
     background-color: #EB6E80;
 }
@@ -226,4 +228,4 @@ h3 {
 }
 
 }
->>>>>>> efe6b29cd63b58ed094aa7d8f776c05541a2e88b
+/*>>>>>>> efe6b29cd63b58ed094aa7d8f776c05541a2e88b*/
