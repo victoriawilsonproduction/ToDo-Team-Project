@@ -1,2 +1,7 @@
 .DS_Store
+<<<<<<< HEAD
 todoapp/node_modules/
+=======
+
+node_modelues/
+>>>>>>> bd21e30af2de6dd216a258d943be83edf0185164
