@@ -123,7 +123,6 @@ var containsClass=listItem.classList.contains("editMode");
 	}
 }
 
-
 //Delete task.
 var deleteTask=function(){
 		console.log("Delete Task...");
@@ -214,9 +213,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 
 // Issues with usabiliy don't get seen until they are in front of a human tester.
 
-//Shange edit to save when you are in edit mode.
+//Change edit to save when you are in edit mode.
 
-//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 //prevent creation of empty tasks.
 
-//Change edit to save when you are in edit mode.
