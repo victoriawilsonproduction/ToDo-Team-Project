@@ -52,8 +52,8 @@ console.log('add');
 
 	editButton.innerText="Edit";//innerText encodes special characters, HTML does not.
 	editButton.className="edit";
-	saveButton.innerText="Save";
-	saveButton.className="save";
+	//saveButton.innerText="Save";
+	//saveButton.className="save";
 	deleteButton.innerText="Delete";
 	deleteButton.className="delete";
 
@@ -164,15 +164,15 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 	console.log("bind list item events");
 //select ListItems children
 	var checkBox=taskListItem.querySelector("input[type=checkbox]");
-	var editButton=taskListItem.querySelector("button.edit");
+	//var editButton=taskListItem.querySelector("button.edit");
 	var deleteButton=taskListItem.querySelector("button.delete");
-	var saveButton=taskListItem.querySelector("button.save");
+	//var saveButton=taskListItem.querySelector("button.save");
 
 
 			//Bind editTask to edit button.
 			editButton.onclick=editTask;
 			//Bind saveTask to save button.
-			saveButton.onclick=saveTask;
+			//saveButton.onclick=saveTask;
 			//Bind deleteTask to delete button.
 			deleteButton.onclick=deleteTask;
 			//Bind taskCompleted to checkBoxEventHandler.
