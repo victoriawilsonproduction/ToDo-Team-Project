@@ -115,17 +115,12 @@ var containsClass=listItem.classList.contains("editMode");
 
 		//toggle .editmode on the parent.
 		listItem.classList.toggle("editMode");
-<<<<<<< HEAD
 		
 		if(this.innerHTML=="Edit"){
 		this.innerHTML="Save";
 	}else{
 		this.innerHTML="Edit"
 	}
-}
-=======
->>>>>>> f4685ccbda990891c94e04ddd113f6775673b850
-
 }
 
 //Delete task.
@@ -217,13 +212,3 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 
 
 // Issues with usabiliy don't get seen until they are in front of a human tester.
-
-<<<<<<< HEAD
-//Shange edit to save when you are in edit mode.
-
-//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-=======
-//prevent creation of empty tasks.
-
-//Change edit to save when you are in edit mode.
->>>>>>> f4685ccbda990891c94e04ddd113f6775673b850
