@@ -95,6 +95,15 @@ var addTask=function(){
 
 }
 
+var saveTask=function(){
+	var button = document.querySelector(".editMode button.edit")
+	if(button.innerHTML=="Edit"){
+		button.innerHTML="Save";
+	}else{
+		button.innerHTML="Edit"
+	}
+}
+
 //Edit an existing task.
 
 var editTask=function(){
@@ -118,10 +127,13 @@ var containsClass=listItem.classList.contains("editMode");
 
 		//toggle .editmode on the parent.
 		listItem.classList.toggle("editMode");
-
+		
+		if(this.innerHTML=="Edit"){
+		this.innerHTML="Save";
+	}else{
+		this.innerHTML="Edit"
+	}
 }
-
-
 
 //Delete task.
 var deleteTask=function(){
@@ -213,6 +225,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 
 // Issues with usabiliy don't get seen until they are in front of a human tester.
 
+//Change edit to save when you are in edit mode.
+
 //prevent creation of empty tasks.
 
-//Change edit to save when you are in edit mode.
