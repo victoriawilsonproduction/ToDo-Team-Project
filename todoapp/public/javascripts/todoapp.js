@@ -212,3 +212,4 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 
 
 // Issues with usabiliy don't get seen until they are in front of a human tester.
+
