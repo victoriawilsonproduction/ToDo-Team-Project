@@ -6,6 +6,9 @@ body{
 /*hr{
 	background-color: #E24E42;
 }*/
+header{
+  text-align: center;
+}
 
 .mylogo{
 	width: auto;
@@ -17,6 +20,10 @@ body{
   display: block;
   width: 400px;
   margin: 100px auto 0;
+  border-width: 30px;
+  border-style: solid;
+  border-color: #E9B000;
+
 }
 ul {
   margin: 0;
@@ -141,7 +148,7 @@ nav ul{
 }
 
 .nav-link{
-	color:#373737 !important;
+	color:#FFF !important;
 }
 
 .dropdown-menu{
@@ -203,6 +210,7 @@ p {
 
 h1 {
     font-family: 'Libre Baskerville', serif;
+    text-align: center;
 }
 
 h2 {
@@ -213,9 +221,15 @@ h3 {
     font-family: 'Libre Baskerville', serif;
 }
 
+h4 {
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  color: #008f95;
+}
+#tagline{
+  margin-bottom: -33px;
+}
 
-
-/*<<<<<<< HEAD*/
 #list1 {
     background-color: #E9B000;
 }
@@ -226,6 +240,3 @@ h3 {
 #items {
     background-color:#E9B000;
 }
-
-}
-/*>>>>>>> efe6b29cd63b58ed094aa7d8f776c05541a2e88b*/

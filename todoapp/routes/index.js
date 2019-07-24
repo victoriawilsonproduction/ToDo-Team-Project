@@ -5,7 +5,7 @@ var router = express.Router();
 
 /*home screen*/
 router.get('/', function(req, res, next){
-	res.render('index',{ title: 'Finito', header: 'Welcome to Finito!'});
+	res.render('index',{ title: 'Finito', header: 'Long-Term Organization'});
 });
 
 /*completed tasks, pulls data after user marks item as completed*/
