@@ -11,7 +11,19 @@ function addLi(){
 function checkItem(){
 	
 }
+// Get the input field
+var input = document.getElementById("new-task");
 
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    addTask();
+  }
+}); 
 
 //Document is the DOM can be accessed in the console with document.window.
 // Tree is from the top, html, body, p etc.
