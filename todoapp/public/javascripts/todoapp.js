@@ -31,9 +31,8 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 
 //New task list item
 var createNewTaskElement=function(taskString){
-
+console.log('add');
 	var listItem=document.createElement("li");
-
 	//input (checkbox)
 	var checkBox=document.createElement("input");//checkbx
 	//label
@@ -42,7 +41,6 @@ var createNewTaskElement=function(taskString){
 	var editInput=document.createElement("input");//text
 	//button.edit
 	var editButton=document.createElement("button");//edit button
-
 	//button.delete
 	var deleteButton=document.createElement("button");//delete button
 
@@ -155,7 +153,7 @@ var ajaxRequest=function(){
 
 
 //Set the click handler to the addTask function.
-addButton.onclick=addTask;
+// addButton.onclick=addTask;
 addButton.addEventListener("click",addTask);
 addButton.addEventListener("click",ajaxRequest);
 
