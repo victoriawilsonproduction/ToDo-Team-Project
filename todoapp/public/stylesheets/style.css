@@ -6,6 +6,9 @@ body{
 /*hr{
 	background-color: #E24E42;
 }*/
+header{
+  align-content: center
+}
 
 .mylogo{
 	width: auto;
