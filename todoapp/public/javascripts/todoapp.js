@@ -89,7 +89,6 @@ var editTask=function(){
 console.log("Edit Task...");
 console.log("Change 'edit' to 'save'");
 
-
 var listItem=this.parentNode;
 
 var editInput=listItem.querySelector('input[type=text]');
@@ -107,8 +106,8 @@ var containsClass=listItem.classList.contains("editMode");
 
 		//toggle .editmode on the parent.
 		listItem.classList.toggle("editMode");
-}
 
+}
 
 
 
@@ -201,6 +200,4 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 
 //prevent creation of empty tasks.
 
-//Shange edit to save when you are in edit mode.
-
-//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//Change edit to save when you are in edit mode.
