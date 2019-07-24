@@ -225,7 +225,3 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 
 // Issues with usabiliy don't get seen until they are in front of a human tester.
 
-//Change edit to save when you are in edit mode.
-
-//prevent creation of empty tasks.
-
