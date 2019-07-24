@@ -6,9 +6,7 @@ body{
 /*hr{
 	background-color: #E24E42;
 }*/
-header{
-  align-content: center
-}
+
 
 .mylogo{
 	width: auto;
@@ -19,7 +17,10 @@ header{
 .container {
   display: block;
   width: 400px;
-  margin: 100px auto 0;
+  margin: 100px ;
+  border-style: solid;
+  border-width: 30px;
+  border-color: #E9B000;
 }
 ul {
   margin: 0;
@@ -206,6 +207,7 @@ p {
 
 h1 {
     font-family: 'Libre Baskerville', serif;
+    text-align: center;
 }
 
 h2 {
@@ -214,6 +216,7 @@ h2 {
 
 h3 {
     font-family: 'Libre Baskerville', serif;
+
 }
 
 
