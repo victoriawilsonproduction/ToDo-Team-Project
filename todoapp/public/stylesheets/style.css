@@ -20,6 +20,9 @@ header{
   display: block;
   width: 400px;
   margin: 100px auto 0;
+  border-width: 30px;
+  border-style: solid;
+  border-color: #E9B000;
 }
 ul {
   margin: 0;
