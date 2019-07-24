@@ -164,7 +164,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 	console.log("bind list item events");
 //select ListItems children
 	var checkBox=taskListItem.querySelector("input[type=checkbox]");
-	//var editButton=taskListItem.querySelector("button.edit");
+	var editButton=taskListItem.querySelector("button.edit");
 	var deleteButton=taskListItem.querySelector("button.delete");
 	//var saveButton=taskListItem.querySelector("button.save");
 
