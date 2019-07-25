@@ -14,8 +14,10 @@
     <div><%- partial('partials/navbar') -%></div>
     <br><br><br>
     <%- body -%>
-
+    <br><br><br>
+    <h5>Please name your new list here:<input type=text></h5>
     <div class="container">
+      <h2>users list name here</h2>
      <h3> Add Item </h3>
        <input id="new-task" type="text"><button id= "addButton">Add</button>
 
@@ -30,8 +32,12 @@
         <li>
         </li>
       </ul>
+      <a class="btn">Save</a>
+      <a href="#" class="btn">Create a New List</a>
     </div>
      <br><br><br>
+
+     <h2>Saved Lists</h2>
 
      <div><%-partial('partials/cards') %> </div>
 
@@ -42,5 +48,6 @@
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
  <script type="text/javascript" src= "javascripts/todoapp.js"></script>
+ <script type="text/javascript" src= "javascripts/multipleLists.js"></script>
 </body>
 </html>

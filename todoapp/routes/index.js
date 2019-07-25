@@ -13,6 +13,10 @@ router.get('/login', function(req, res, next){
 	res.render('login', {error: null});
 });
 
+router.get('/multipleLists', function(req, res, next){
+	res.render('multipleLists', {error: null});
+});
+
 router.post('/login', function(req, res, next){
 	if(req.body.username && req.body.password){
 		var data = req.body.password;
