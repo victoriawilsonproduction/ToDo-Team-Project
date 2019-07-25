@@ -229,5 +229,46 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 
 
 
-// Issues with usabiliy don't get seen until they are in front of a human tester.
+// DO NOT DELETE PLZZZZZZ
+//var mojito= function popup('urlforimage', popupWindow){
+// 	if (! window.focus)return true;
+// 	var href;
+// 	if ()
+// 	window.alert("Mojito time!");
+// 		alert("Mojito Time!")};
+
+
+
+
+
+// addButton.addEventListener(){ 
+// 	if (incompleteTaskHolder.children.length=[0] && taskListItem=null)
+// 		return (mojito)
+// 	}else{ (hide)};
+// // no button? click anywhere to dismiss
+
+// <SCRIPT TYPE="text/javascript">
+//   function popup(mylink, windowname) { 
+//     if (! window.focus)return true;
+//     var href;
+//     if (typeof(mylink) == 'string') href=mylink;
+//     else href=mylink.href; 
+//     window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); 
+//     return false; 
+//   }
+// </SCRIPT>
+
+
+// Read more: https://html.com/javascript/popup-windows/#ixzz5ui0oHvgS
+
+
+
+
+
+
+
+
+
+
+
 
