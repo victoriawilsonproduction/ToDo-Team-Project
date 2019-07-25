@@ -186,7 +186,7 @@ footer{
 	background-color:#EB6E80;
 	position:absolute;
 	width:100%;
-	height:auto;
+	height: 150px;
 }
 
 footer ul li{
@@ -216,6 +216,18 @@ footer a, footer p{
 
 footer a:hover{
 	color: #008F95;
+}
+
+.container-fluid {
+  width: 100%;
+  height: auto;
+}
+
+footer ul {
+  float:right;
+
+}
+
 }
 
 p {
