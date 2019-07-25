@@ -17,6 +17,9 @@
     <% if(typeof currentUser !== 'undefined' && currentUser !== null) { %>
       <br>
       <p id="welcomeback"> Hi, <%= currentUser.username %>! Welcome back to Finito!</p>
+    <% } else { %>
+      <br>
+      <p id="welcomeback">Welcome to Finito!</p>
     <% } %>
 
     <br><br><br>
@@ -44,7 +47,7 @@
     <h4 id="tagline">Finito to Mojito!</h4>
 
      <br><br><br>
-     
+
     <div><%-partial('partials/footer') %></div>
 
  <script src="https://kit.fontawesome.com/792aec6a64.js"></script>
