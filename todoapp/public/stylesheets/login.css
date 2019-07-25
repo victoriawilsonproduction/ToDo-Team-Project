@@ -20,7 +20,7 @@ header{
 .container {
   display: block;
   width: 400px;
-  margin: 100px auto 0;
+  margin: 85px auto 0;
   border-width: 30px;
   border-style: solid;
   border-color: #E9B000;
@@ -141,4 +141,5 @@ h4 {
 	float: center;
 	font-family: 'Lora', serif;
 }
+
 
