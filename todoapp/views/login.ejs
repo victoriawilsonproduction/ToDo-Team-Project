@@ -6,10 +6,10 @@
 		<% if(error) { %>
 		<%= error %>
 		<% } %>
-		<form action="/login" method="post">
+		<form id="login" action="/login" method="post">
 			<label for="username">Email Address: </label>
-			<input name="username" placeholder="Email Address" required autofocus>
-			<br>
+			<input name="username" required autofocus>
+			<br> <br> 
 			<label for="password">Password: </label>
 			<input name="password" type="password" required>
 			<br>
