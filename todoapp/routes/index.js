@@ -31,11 +31,11 @@ router.post('/login', function(req, res, next){
 	}
 });
 
-// router.get('/logout', function(req, res, next){
-// 	req.session.destroy(function(){
-// 		res.redirect('/');
-// 	});
+router.get('/logout', function(req, res, next){
+	req.session.destroy(function(){
+		res.redirect('/');
+	});
 
-// })
+})
 
 module.exports = router;

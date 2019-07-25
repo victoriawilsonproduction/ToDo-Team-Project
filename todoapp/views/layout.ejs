@@ -11,7 +11,13 @@
 </head>
 <body>
 
+
     <div><%- partial('partials/navbar') -%></div>
+
+    <% if(typeof currentUser !== 'undefined' && currentUser !== null) { %>
+      <p>Hi, <%= currentUser.username %>! Welcome back to Finito!</p>
+    <% } %>
+
     <br><br><br>
     <%- body -%>
 
