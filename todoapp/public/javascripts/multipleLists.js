@@ -15,5 +15,9 @@
 		list.innerHTML += '<li><div class="card"><div class="card-body"><h5 class="card-title">Users saved list name</h5><br><a href="../multipleLists" class="btn btn-primary">Check out my list</a></div></div> </li>'
 	});
 
-var labelList = listName.queryselector('input [type=text]');
 
+var setTitle = function(){
+	var userInput = document.getElementById('listName');
+	var listTitle = document.getElementById('listTitle');
+	listTitle.innerText=userInput.value;
+}
