@@ -2,23 +2,40 @@ var express = require('express');
 var layout = require('express-layout');
 var app = express();
 var router = express.Router();
+var crypto = require('crypto');
 
 /*home screen*/
 router.get('/', function(req, res, next){
-	res.render('index',{ title: 'Finito', header: 'Long-Term Organization'});
+	res.render('index',{ title: 'Finito', header: 'Finito to Mojito!'});
 });
 
-/*completed tasks, pulls data after user marks item as completed*/
-router.get('completed', function(req, res, next){
-	res.send(req.cookies.completed);
-	res.render('completed');
+router.get('/login', function(req, res, next){
+	res.render('login', {error: null});
 });
 
+router.post('/login', function(req, res, next){
+	if(req.body.username && req.body.password){
+		var data = req.body.password;
+		var hash = crypto.createHash('sha256').update(data).digest('hex');
 
-/*deleted tasks*/
-router.get('/deleted', function (req, res, next){
-	res.send(req.cookie.completed);
-	res.render('deleted');
+		console.log('hash', hash);
+
+		req.session.authentication = {
+			username: req.body.username,
+			password: hash
+		};
+
+		res.redirect('/');
+	}else{
+		res.render('login', {error: 'Invalid username or password'})
+	}
 });
+
+// router.get('/logout', function(req, res, next){
+// 	req.session.destroy(function(){
+// 		res.redirect('/');
+// 	});
+
+// })
 
 module.exports = router;

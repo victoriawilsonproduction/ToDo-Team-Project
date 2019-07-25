@@ -11,7 +11,19 @@ function addLi(){
 function checkItem(){
 	
 }
+// Get the input field
+var input = document.getElementById("new-task");
 
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    addTask();
+  }
+}); 
 
 //Document is the DOM can be accessed in the console with document.window.
 // Tree is from the top, html, body, p etc.
@@ -31,9 +43,8 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 
 //New task list item
 var createNewTaskElement=function(taskString){
-
+console.log('add');
 	var listItem=document.createElement("li");
-
 	//input (checkbox)
 	var checkBox=document.createElement("input");//checkbx
 	//label
@@ -42,7 +53,6 @@ var createNewTaskElement=function(taskString){
 	var editInput=document.createElement("input");//text
 	//button.edit
 	var editButton=document.createElement("button");//edit button
-
 	//button.delete
 	var deleteButton=document.createElement("button");//delete button
 
@@ -54,6 +64,8 @@ var createNewTaskElement=function(taskString){
 
 	editButton.innerText="Edit";//innerText encodes special characters, HTML does not.
 	editButton.className="edit";
+	//saveButton.innerText="Save";
+	//saveButton.className="save";
 	deleteButton.innerText="Delete";
 	deleteButton.className="delete";
 
@@ -83,12 +95,20 @@ var addTask=function(){
 
 }
 
+var saveTask=function(){
+	var button = document.querySelector(".editMode button.edit")
+	if(button.innerHTML=="Edit"){
+		button.innerHTML="Save";
+	}else{
+		button.innerHTML="Edit"
+	}
+}
+
 //Edit an existing task.
 
 var editTask=function(){
 console.log("Edit Task...");
 console.log("Change 'edit' to 'save'");
-
 
 var listItem=this.parentNode;
 
@@ -107,10 +127,13 @@ var containsClass=listItem.classList.contains("editMode");
 
 		//toggle .editmode on the parent.
 		listItem.classList.toggle("editMode");
+		
+		if(this.innerHTML=="Edit"){
+		this.innerHTML="Save";
+	}else{
+		this.innerHTML="Edit"
+	}
 }
-
-
-
 
 //Delete task.
 var deleteTask=function(){
@@ -156,7 +179,7 @@ var ajaxRequest=function(){
 
 
 //Set the click handler to the addTask function.
-addButton.onclick=addTask;
+// addButton.onclick=addTask;
 addButton.addEventListener("click",addTask);
 addButton.addEventListener("click",ajaxRequest);
 
@@ -167,10 +190,13 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 	var checkBox=taskListItem.querySelector("input[type=checkbox]");
 	var editButton=taskListItem.querySelector("button.edit");
 	var deleteButton=taskListItem.querySelector("button.delete");
+	//var saveButton=taskListItem.querySelector("button.save");
 
 
 			//Bind editTask to edit button.
 			editButton.onclick=editTask;
+			//Bind saveTask to save button.
+			//saveButton.onclick=saveTask;
 			//Bind deleteTask to delete button.
 			deleteButton.onclick=deleteTask;
 			//Bind taskCompleted to checkBoxEventHandler.
@@ -199,8 +225,3 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 
 // Issues with usabiliy don't get seen until they are in front of a human tester.
 
-//prevent creation of empty tasks.
-
-//Shange edit to save when you are in edit mode.
-
-//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -45,13 +45,13 @@ button {
   color: #888;
   font-size: 15px;
   width: 60px;
-  margin: 10px 0 0;
+  margin: inherit, 0 0;
   font-family: 'Lora', serif;
   cursor: pointer;
   float: right;
-  display: in-line block;
+  display: inline-block;
 }
-button:hover {
+button: hover {
   color: #333;
 }
 /* Heading */
@@ -89,6 +89,11 @@ label[for='new-task'] {
 input#new-task {
   float: left;
   width: 318px;
+  margin: 1.25rem;
+}
+
+#addButton{
+  margin: 1.25rem;
 }
 p > button:hover {
   color: #0FC57C;
@@ -219,6 +224,7 @@ h2 {
 
 h3 {
     font-family: 'Libre Baskerville', serif;
+    
 }
 
 h4 {
