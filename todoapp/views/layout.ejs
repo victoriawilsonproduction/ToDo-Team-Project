@@ -33,8 +33,8 @@
         </li>
       </ul>
 
-      <input type="button" id="btnSave" value="Save">
-      <input type="button" id="btnSave" value="Create a New List">
+      <input type="button" id="btnSave" value="Save" onclick="addElement()">
+      <input type="button" id="btnCreate" value="Create a New List">
 
     </div>
      <br><br><br>
@@ -42,7 +42,7 @@
      <h2>Saved Lists</h2>
 
     <ul id="savedLists">
-     <li><div><%-partial('partials/cards') %> </div></li>
+     <li><div><%- partial('partials/cards') %> </div></li>
     </ul>
 
 <br><br><br>

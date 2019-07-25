@@ -1,19 +1,8 @@
-function addElement () { 
-var saveList=createNewListElement(listInput.value);
-var addList=document.createElement(saveList, [""]){
-	console.log("Add List...");
-
-	saveList.appendChild(addList);
-	bindTaskEvents(saveList, addList);
-
-	taskInput.value="text";
 
 
-//   var newContent = document.createTextNode(href='/layout.ejs'); 
-//   // add the text node to the newly created div
-//   newDiv.appendChild(newContent);  
-
-//   // add the newly created element and its content into the DOM 
-//   var currentDiv = document.getElementById("div1"); 
-//   document.body.insertBefore(newDiv, currentDiv); 
-// }
+	var list = document.getElementById("savedLists");
+	var add = document.getElementById('btnSave');
+	add.addEventListener('click', function(){
+		var itemsByTagName = document.getElementsByTagName("li");
+		list.innerHTML += '<li><div class="card"><div class="card-body"><h5 class="card-title">Users saved list name</h5><br><a href="../multipleLists" class="btn btn-primary">Check out my list</a></div></div> </li>'
+	});
