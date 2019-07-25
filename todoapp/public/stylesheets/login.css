@@ -1,0 +1,135 @@
+
+body{
+	background-color:#FFF;
+	font-family: 'Lora', serif;
+}
+
+
+header{
+  text-align: center;
+}
+
+.mylogo{
+	width: auto;
+	vertical-align: center;
+	height:auto;
+}
+
+.container {
+  display: block;
+  width: 400px;
+  margin: 100px auto 0;
+  border-width: 30px;
+  border-style: solid;
+  border-color: #E9B000;
+
+}
+
+input, button {
+  outline: none;
+}
+button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  margin: inherit, 0 0;
+  font-family: 'Lora', serif;
+  cursor: pointer;
+  float: right;
+  display: inline-block;
+}
+button: hover {
+  color: #333;
+}
+
+nav.navbar{
+	background-color: #EB6E80 !important;
+}
+
+nav ul{
+	position: absolute !important;
+	right:10px !important;
+}
+
+.nav-link{
+	color:#FFF !important;
+}
+
+.dropdown-menu{
+	background-color: #E9B000;
+	color: #F4F4F4;
+	border-color: #373737 ;
+	left:-80px;
+}
+
+.dropdown-item{
+	color:#373737;
+}
+
+
+.footer_div{
+	display: block;
+	float: left;
+}
+
+footer{
+	background-color:#EB6E80;
+	position:absolute;
+	width:100%;
+	height:auto;
+}
+
+footer ul li{
+	display:inline-block;
+	list-style:none;
+	padding:2%;
+	float:right;
+}
+
+footer p{
+	float:left;
+	padding:2%;
+	display: inline-block;
+}
+
+footer img{
+	margin-top: 20px;
+	float:left;
+	display:inline-block;
+	height: 40px;
+}
+
+footer a, footer p{
+	color:#fff;
+	vertical-align: center;
+}
+
+footer a:hover{
+	color: #008F95;
+}
+
+p {
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    
+}
+
+h4 {
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  color: #008f95;
+}
