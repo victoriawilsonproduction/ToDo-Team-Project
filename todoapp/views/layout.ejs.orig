@@ -17,7 +17,11 @@
 
     <div class="container">
      <h3> Add Item </h3>
+<<<<<<< HEAD
        <input id="new-task" type="text"><button id="addButton">Add</button>
+=======
+       <input id="new-task" type="text"><button id= "addButton">Add</button>
+>>>>>>> 2fc72e1149e6f95a757c7931ed054231fdd0f56d
 
       
       <h3>To Do</h3>
