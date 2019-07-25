@@ -7,29 +7,14 @@
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   	<script src="https://kit.fontawesome.com/792aec6a64.js"></script>
 
-
 </head>
 
 <body> 
 	 <div><%- partial('partials/navbar') -%></div>
     <br><br><br>
+    <div class="container">
     <%- body -%>
 
-    <div>
-		<h2>Please Log In</h2>
-		<% if(error) { %>
-		<%= error %>
-		<% } %>
-		<form action="/login" method="post">
-			<label for="username">Email Address</label>
-			<input name="username" placeholder="Email Address" required autofocus>
-
-			<label for="password">Password</label>
-			<input name="password" type="password" required>
-
-			<button type="submit">Sign In</button>
-		</form>
-	</div>
 
 
      <br><br><br>
