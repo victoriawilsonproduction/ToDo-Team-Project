@@ -30,17 +30,15 @@ header{
 input, button {
   outline: none;
 }
-button {
+#loginbtn {
   background: none;
   border: 0px;
   color: #888;
   font-size: 15px;
-  width: 60px;
-  margin: inherit, 0 0;
   font-family: 'Lora', serif;
   cursor: pointer;
-  float: center;
-  display: inline-block;
+  float: center !important;
+ 
 }
 button: hover {
   color: #333;
@@ -143,3 +141,4 @@ h4 {
 	float: center;
 	font-family: 'Lora', serif;
 }
+
