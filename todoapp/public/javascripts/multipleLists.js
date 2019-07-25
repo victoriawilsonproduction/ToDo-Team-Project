@@ -1,4 +1,12 @@
+// function addElement () { 
+// var saveList=createNewListElement(listInput.value);
+// var addList=document.createElement(saveList, [""]){
+// 	console.log("Add List...");
 
+// 	saveList.appendChild(addList);
+// 	bindTaskEvents(saveList, addList);
+
+// 	taskInput.value="text";
 
 	var list = document.getElementById("savedLists");
 	var add = document.getElementById('btnSave');
