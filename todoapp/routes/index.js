@@ -6,9 +6,8 @@ var crypto = require('crypto');
 
 /*home screen*/
 router.get('/', function(req, res, next){
-	res.render('login', {error: null});
+	res.render('index', {error: null});
 });
-
 
 router.get('/login', function(req, res, next){
 	res.render('login', {error: null});
