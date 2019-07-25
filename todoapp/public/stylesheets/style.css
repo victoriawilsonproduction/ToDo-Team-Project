@@ -248,8 +248,9 @@ h4 {
 }
 
 #welcomeback {
-  font-family: 'Lora', serif; 
+  font-family: 'Libre Baskerville', serif; 
   float: center;
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
+  color: #E24E24;
 }
