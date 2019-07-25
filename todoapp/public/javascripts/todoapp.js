@@ -25,15 +25,19 @@ input.addEventListener("keyup", function(event) {
   }
 }); 
 
-//Document is the DOM can be accessed in the console with document.window.
-// Tree is from the top, html, body, p etc.
+// Get the input field
+var inputTwo = document.getElementById("incomplete-tasks");
 
-//Problem: User interaction does not provide the correct results.
-//Solution: Add interactivity so the user can manage daily tasks.
-//Break things down into smaller steps and take each step at a time.
-
-
-//Event handling, uder interaction is what starts the code execution.
+function enterUp (event) {console.log("enter")
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13){
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    var editFunction = editTask.bind(this);
+    editFunction(this.innerHTML);
+  }
+}; 
 
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
@@ -154,7 +158,7 @@ var taskCompleted=function(){
 	//Append the task list item to the #completed-tasks
 	var listItem=this.parentNode;
 	completedTasksHolder.appendChild(listItem);
-				bindTaskEvents(listItem, taskIncomplete);
+				bindTaskEvents(listItem,taskIncomplete);
 
 }
 
@@ -190,17 +194,19 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 	var checkBox=taskListItem.querySelector("input[type=checkbox]");
 	var editButton=taskListItem.querySelector("button.edit");
 	var deleteButton=taskListItem.querySelector("button.delete");
-	//var saveButton=taskListItem.querySelector("button.save");
+	var saveButton=taskListItem.querySelector("button.save");
+	var inputTwo=taskListItem.querySelector("input[type=text]");
 
 
 			//Bind editTask to edit button.
-			editButton.onclick=editTask;
+			if (editButton) editButton.onclick=editTask;
 			//Bind saveTask to save button.
-			//saveButton.onclick=saveTask;
+			if (saveButton) saveButton.onclick=saveTask;
+			if (inputTwo) inputTwo.onkeyup=enterUp;
 			//Bind deleteTask to delete button.
-			deleteButton.onclick=deleteTask;
+			if (deleteButton) deleteButton.onclick=deleteTask;
 			//Bind taskCompleted to checkBoxEventHandler.
-			checkBox.onchange=checkBoxEventHandler;
+			if (checkBox) checkBox.onchange=checkBoxEventHandler;
 }
 
 //cycle over incompleteTaskHolder ul list items
