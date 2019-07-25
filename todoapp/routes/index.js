@@ -6,8 +6,9 @@ var crypto = require('crypto');
 
 /*home screen*/
 router.get('/', function(req, res, next){
-	res.render('index',{ title: 'Finito', header: 'Finito to Mojito!'});
+	res.render('login', {error: null});
 });
+
 
 router.get('/login', function(req, res, next){
 	res.render('login', {error: null});
@@ -39,3 +40,4 @@ router.get('/logout', function(req, res, next){
 })
 
 module.exports = router;
+
