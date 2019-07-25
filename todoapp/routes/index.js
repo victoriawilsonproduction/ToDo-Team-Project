@@ -6,7 +6,7 @@ var crypto = require('crypto');
 
 /*home screen*/
 router.get('/', function(req, res, next){
-	res.render('index',{ title: 'Finito', header: 'Finito to Mojito!'});
+	res.render('index', {error: null});
 });
 
 router.get('/login', function(req, res, next){
@@ -31,11 +31,12 @@ router.post('/login', function(req, res, next){
 	}
 });
 
-// router.get('/logout', function(req, res, next){
-// 	req.session.destroy(function(){
-// 		res.redirect('/');
-// 	});
+router.get('/logout', function(req, res, next){
+	req.session.destroy(function(){
+		res.redirect('/');
+	});
 
-// })
+})
 
 module.exports = router;
+

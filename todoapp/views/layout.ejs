@@ -11,8 +11,19 @@
 </head>
 <body>
 
+
     <div><%- partial('partials/navbar') -%></div>
-    <br><br><br>
+
+    <% if(typeof currentUser !== 'undefined' && currentUser !== null) { %>
+
+      <br> <br>
+      <h4 id="welcomeback"> Hi, <%= currentUser.username %>! Welcome Back to Finito!</h4>
+
+    <% } else { %>
+      <br><br>
+      <h4 id="welcomeback">Welcome to Finito!</h4>
+    <% } %>
+    
     <%- body -%>
 
     <div class="container">
@@ -31,7 +42,13 @@
         </li>
       </ul>
     </div>
+
+    <br><br>
+
+    <h4 id="tagline">"Finito to Mojito!"</h4>
+
      <br><br><br>
+
     <div><%-partial('partials/footer') %></div>
 
  <script src="https://kit.fontawesome.com/792aec6a64.js"></script>
