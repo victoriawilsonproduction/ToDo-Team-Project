@@ -2,10 +2,12 @@
     <div><%- partial('partials/navbar') -%></div>
 
 	<div>
+		<br>
 		<h2>Please Log In</h2>
 		<% if(error) { %>
 		<%= error %>
 		<% } %>
+		<br> 
 		<form id="login" action="/login" method="post">
 			<label for="username">Email Address: </label>
 			<input name="username" required autofocus>
