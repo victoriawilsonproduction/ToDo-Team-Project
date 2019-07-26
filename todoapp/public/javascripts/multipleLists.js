@@ -21,7 +21,7 @@
 	};
 
 	var alert = function(){
-		var box = alertBox.innerHTML += '<div class="alert alert-warning" role="alert"> Please remember to save your list! would you like to continue?' + '<button>No</button><button>Yes</button>' + '<br> This message will disappear in 8 seconds. </div>'
+				var box = alertBox.innerHTML += '<div class="alert alert-warning" role="alert"> Please remember to save your list! would you like to continue?' + '<button>No</button><button>Yes</button>' + '<br> This message will disappear in 8 seconds. </div>'
 	};
 
 	var refresh = function(){
