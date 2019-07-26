@@ -22,11 +22,14 @@
 
 	var alert = function(){
 		var box = alertBox.innerHTML += '<div class="alert alert-warning" role="alert"> Please remember to save your list! would you like to continue?' + '<button>No</button><button>Yes</button>' + '<br> This message will disappear in 8 seconds. </div>'
-		var Default = preventDefault();
 	};
 
-	var refresh = setTimeout(function(){
-		window.location.reload()}, 8000);
+	var refresh = function(){
+		setTimeout(function(){
+		window.location.reload();
+		},8000);
+		clearTimeout();
+		};
 
 	add.addEventListener('click', function(){
 		var itemsByTagName = document.getElementsByTagName("li");
