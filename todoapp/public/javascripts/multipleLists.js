@@ -41,6 +41,36 @@
 		list.innerHTML += '<li><div class="card"><div class="card-body"><h5 class="card-title">'+ listTitle.innerText +'</h5><br><a href="../multipleLists?id=' + cards.length + '" class="btn btn-primary">Check out my list</a></div></div> </li>'
 	});
 
-// var setCardTitle = function(){
-// 	var listTitle
-// }
+var completeList ={ title: "",
+			items: [{name: "",
+					done: false}]};
+
+var myLists =[{completeList}]
+localStorage.setItem("listAll",Json.stringify(myLists));
+
+var urlParams =new URLSearchParams(window.location.search);
+var index=urlParams.get("id");
+
+var listAll=JSON.parse(localStorage.getItem("listAll"))
+var completeList = listAll [index];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

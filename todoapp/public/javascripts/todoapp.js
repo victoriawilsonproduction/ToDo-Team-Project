@@ -64,7 +64,7 @@ console.log('add');
 
 	//and appending.
 	listItem.appendChild(checkBox);
-	listItem.appendChild(label);
+	listItem.apendChild(label);
 	listItem.appendChild(editInput);
 	listItem.appendChild(editButton);
 	listItem.appendChild(deleteButton);
@@ -146,6 +146,18 @@ var taskCompleted=function(){
 	var listItem=this.parentNode;
 	completedTasksHolder.appendChild(listItem);
 				bindTaskEvents(listItem, taskIncomplete);
+
+		// querySelector
+		// if array=0,
+		// 	run 
+		// function popup(mylink, windowname) { 
+  //   if (! window.focus)return true;
+  //   var href;
+  //   if (typeof(mylink) == 'string') href=mylink;
+  //   else href=mylink.href; 
+  //   window.open(href, windowname, 'width=400,height=200,scrollbars=no'); 
+  //   return false; 
+  // }
 
 }
 
